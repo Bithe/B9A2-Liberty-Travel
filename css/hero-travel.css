@@ -327,6 +327,12 @@ margin: 0 auto;
 
 .choose-description h4{
   margin-bottom: 16px;
+  color: #131318;
+
+font-family: Mulish;
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
 }
 
 
@@ -341,6 +347,7 @@ margin: 0 auto;
   border-radius: 16px;
 border: 1px solid rgba(251, 181, 99, 0.20);
 }
+
 
 .best-price{
 /* width: 50%;
