@@ -310,6 +310,44 @@ select {
 
 /* DESTINATION ENDS */
 
+
+
+/* CHOOSE STARTS */
+
+
+.choose-content{
+text-align: center;
+width: 60%;
+margin: 0 auto;
+}
+
+.choose-img{
+  margin-bottom: 32px;
+}
+
+.choose-description h4{
+  margin-bottom: 16px;
+}
+
+
+.choose-options{
+  display: flex;
+  align-items: center;
+}
+
+.option-des{
+  padding: 55px;
+  margin: 32px;
+  border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+}
+
+.best-price{
+/* width: 50%;
+margin: 0 auto; */
+margin: 0 auto;
+width: 50%;
+}
 /* ............................................ */
 
 /* MEDIA QUERY FOR MOBILE */
@@ -431,4 +469,16 @@ select {
   }
 
   /* DESTINATION ENDS */
+
+
+  /* CHOOSE STARTS */
+
+  .choose-options{
+    flex-direction: column;
+  }
+
+  .best-price{
+    width: 90%;
+    margin: 0 auto;
+    }
 }
