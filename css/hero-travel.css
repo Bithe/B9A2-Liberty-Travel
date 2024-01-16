@@ -1,12 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COMMON STYLES */
 .container {
+  width: 90%;
   max-width: 1170px;
   margin: 0 auto;
   border: 2px solid;
+  margin-bottom: 100px;
 }
 
 .primary-orange-color {
   color: #ff5400;
 }
+
+.btn-primary {
+  background: #ff5400;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  border: none;
+  width: 174px;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* NAVBAR STARTS */
 
 nav {
   display: flex;
@@ -56,10 +83,103 @@ nav {
   line-height: normal;
 }
 
-.fa-solid {
+#hamburger {
   display: none;
 }
 
+/* NAVBAR ENDS */
+
+/* BANNER STARTS */
+.bg-img {
+  background: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+
+  /* background-image: url('../Images/Group\ 13\ \(1\)\ \(1\).png'); */
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  background-size: cover;
+}
+.banner {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin: 106px 185px; */
+  text-align: center;
+  width: 80%;
+  margin: 106px auto;
+}
+
+.banner-content h2 {
+  color: #fff;
+
+  font-family: Mulish;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.banner-content p {
+  color: #fff;
+
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+
+.banner-input {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+
+  padding: 16px;
+  width: ;
+}
+
+input {
+  width: 80px;
+  border-radius: 8px;
+  padding: 16px;
+  color: rgba(19, 19, 24, 0.5);
+
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  margin-right: 24px;
+  width: 174px;
+}
+select {
+  width: 174px;
+  border-style: none;
+  border-radius: 8px;
+  padding: 16px;
+  color: rgba(19, 19, 24, 0.5);
+
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-right: 24px;
+}
+
+.find-btn
+
+/* ............................................ */
+
+/* MEDIA QUERY FOR MOBILE */
 @media screen and (max-width: 600px) {
   .nav-icon {
     width: 50%;
@@ -67,13 +187,13 @@ nav {
   .nav-items {
     display: none;
   }
-  .fa-solid {
+  #hamburger {
     width: 50%;
     border: 2px solid;
     display: block;
     text-align: right;
     padding: 20px;
     float: right;
-    font-size: 200%
+    font-size: 200%;
   }
 }
