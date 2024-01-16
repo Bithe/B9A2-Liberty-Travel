@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
@@ -37,26 +37,24 @@
   font-weight: 700;
 }
 
-
-h2{
+h2 {
   color: #131318;
-font-family: Mulish;
-font-size: 2.5rem;
-font-style: normal;
-font-weight: 800;
-margin-bottom: 24px;
+  font-family: Mulish;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  margin-bottom: 24px;
 }
 
+p {
+  color: #5a5a5d;
 
-p{
-  color: #5A5A5D;
-
-font-family: Mulish;
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
-line-height: 26px;
-margin-bottom: 24px;
+  font-family: Mulish;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 24px;
 }
 /* NAVBAR STARTS */
 
@@ -169,7 +167,7 @@ nav {
 
   padding: 16px;
   display: flex;
-  gap:24px;
+  gap: 24px;
   align-items: center;
   justify-content: center;
 }
@@ -203,87 +201,119 @@ select {
   /* margin-right: 24px; */
 }
 
-
 /* BANNER ENDS */
-
 
 /* POPULAR STARTS */
 
-.popular-tour-container{
+.popular-tour-container {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 .popular-tour-content {
   width: 45%;
- 
 }
 
-.popular-tour-content li{
+.popular-tour-content li {
   margin-bottom: 16px;
-  color: rgba(19, 19, 24, 0.70);
+  color: rgba(19, 19, 24, 0.7);
 
-font-family: Mulish;
-font-size: 1rem;
-font-weight: 400;
+  font-family: Mulish;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-
-.popular-tour-content ul> li{
-  color: rgba(19, 19, 24, 0.70);
+.popular-tour-content ul > li {
+  color: rgba(19, 19, 24, 0.7);
   font-size: 16px;
   font-weight: 400;
   margin: 18px;
- 
 }
 .popular-tour-content {
   width: 45%;
- 
 }
 .popular-tour-img img {
   max-width: 540px;
   height: 550px;
 }
 
-
 /* POPULAR ENDS */
 
-
-
 /*  DESTINATION STARTS*/
-.destination-content{
+
+.destination-img p {
+  color: #fff;
+
   text-align: center;
-  width: 60%;
+  font-family: Mulish;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.destination-content {
+  text-align: center;
+  width: 56%;
   margin: 0 auto;
 }
 
-.row{
-  display: grid;
-  border: 2px solid yellow;
-  grid-template-columns: repeat(2, 1fr);
-  /* height: 400px; */
-  gap: 20px;
-  /* display: block; */
+.destination-img {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 24px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+.destination .Maldives {
+  position: absolute;
+  margin-top: 11%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+}
+.destination .Indonesia {
+  position: absolute;
+  margin-top: 11%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+.destination .Srilanka {
+  position: absolute;
+  margin-top: 9%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+.destination .North-America {
+  position: absolute;
+  margin-top: 9%;
+  left: 52%;
+  transform: translate(-50%, -50%);
 }
 
-.row img{
-  /* /* width: 100%; */
-  object-fit: cover;
-  max-width: 100%;
-  display: block;
-
+.destination .Kashmir {
+  position: absolute;
+  margin-top: 9%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+}
+.destination .Bangladesh {
+  position: absolute;
+  margin-top: 9%;
+  left: 27%;
+  transform: translate(-50%, -50%);
+}
+.destination .Bandarban {
+  position: absolute;
+  margin-top: 9%;
+  left: 66%;
+  transform: translate(-50%, -50%);
 }
 
 /* DESTINATION ENDS */
 
 /* ............................................ */
 
-
-
-
-
 /* MEDIA QUERY FOR MOBILE */
 @media screen and (max-width: 600px) {
-
   .nav-icon {
     width: 50%;
   }
@@ -291,7 +321,7 @@ font-weight: 400;
   .nav-items {
     display: none;
   }
-  
+
   #hamburger {
     width: 50%;
     border: 2px solid;
@@ -302,56 +332,103 @@ font-weight: 400;
     font-size: 200%;
   }
 
-
   /* BANNER */
 
-  .banner{
+  .banner {
     width: 100%;
-/* margin: 32px 24px; */
+    /* margin: 32px 24px; */
   }
 
   /* .banner-content{
     width: 100%;
   } */
 
-  .banner-content{
+  .banner-content {
     width: 80%;
   }
 
-  .banner-input{
+  .banner-input {
     flex-direction: column;
     width: 90%;
   }
-  .bg-img{
+  .bg-img {
     width: 100%;
-      /* object-fit: cover; */
+    /* object-fit: cover; */
     background-size: cover;
     /* overflow: hidden; */
     min-width: auto;
   }
 
-
-  select, input{
+  select,
+  input {
     width: 100%;
     margin-bottom: 16px;
   }
 
   /* BANNER ENDS */
 
-
   /* POPULAR */
 
-  .popular-tour-container{
+  .popular-tour-container {
     flex-direction: column;
   }
-  .popular-tour-content, .popular-tour-img{
+  .popular-tour-content,
+  .popular-tour-img {
     width: 100%;
     overflow: auto;
     margin-bottom: 14px;
   }
-  .popular-tour-img img{
+  .popular-tour-img img {
     width: 100%;
   }
 
   /* POPULAR ENDS */
+
+  /* DESTINATION STARTS */
+
+  .destination-content {
+    width: 80%;
+  }
+
+  .destination-img {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .destination-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .destination .Maldives {
+    
+    margin-top: 28%;
+    left: 50%;
+  }
+  .destination .Indonesia {
+    margin-top: 75%;
+    left: 50%;
+  }
+  .destination .Srilanka {
+    margin-top: 35%;
+    left: 50%;
+  }
+  .destination .North-America {
+    margin-top: 100%;
+    left: 50%;
+  }
+
+  .destination .Kashmir {
+    margin-top: 175%;
+    left: 53%;
+  }
+  .destination .Bangladesh {
+    margin-top: 30%;
+    left: 52%;
+  }
+  .destination .Bandarban {
+    margin-top: 82%;
+    left: 50%;
+  }
+
+  /* DESTINATION ENDS */
 }
