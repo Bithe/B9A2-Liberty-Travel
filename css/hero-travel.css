@@ -15,7 +15,7 @@
   width: 90%;
   max-width: 1170px;
   margin: 0 auto;
-  border: 2px solid;
+
   margin-bottom: 100px;
 }
 
@@ -81,7 +81,6 @@ nav {
   font-weight: 800;
 }
 .nav-items {
-  border: 2px solid red;
   width: 50%;
 }
 
@@ -128,7 +127,6 @@ nav {
   background-size: cover;
 }
 .banner {
-  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,6 +135,7 @@ nav {
   text-align: center;
   width: 80%;
   margin: 106px auto;
+  padding: 50px;
 }
 
 .banner-content h2 {
@@ -365,13 +364,13 @@ margin: 0 auto; */
   padding: 30px;
 }
 .newsletter-inputs {
-  border: 2px solid;
+
 }
 
 .newsletter-input {
   width: 100%;
   margin-bottom: 16px;
-  border: 2px solid;
+
   border-radius: 8px;
   border-style: none;
   background-color: rgba(19, 19, 24, 0.05);
@@ -426,6 +425,28 @@ background-color: #FF5400;
 
 /* NEWSLETTER ENDS */
 
+
+/* FOOTER STARTS */
+footer{
+  text-align: center;
+  background-color: rgba(19, 19, 24, 0.05);;
+}
+
+.footer-logo{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  padding: 120px 0 120px 0px;
+}
+footer .container {
+  margin-bottom: 0;
+}
+
+/* FOOTER ENDS */
+
 /* ............................................ */
 
 /* MEDIA QUERY FOR MOBILE */
@@ -440,7 +461,7 @@ background-color: #FF5400;
 
   #hamburger {
     width: 50%;
-    border: 2px solid;
+  
     display: block;
     text-align: right;
     padding: 20px;
