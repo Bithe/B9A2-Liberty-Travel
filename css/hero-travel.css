@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.hide{
+  display: none;
+}
+
 /* COMMON STYLES */
 .container {
   width: 90%;
@@ -13,7 +17,6 @@
   margin: 0 auto;
   border: 2px solid;
   margin-bottom: 100px;
-  min-width: 990
 }
 
 .primary-orange-color {
@@ -34,6 +37,27 @@
   font-weight: 700;
 }
 
+
+h2{
+  color: #131318;
+font-family: Mulish;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 800;
+margin-bottom: 24px;
+}
+
+
+p{
+  color: #5A5A5D;
+
+font-family: Mulish;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+margin-bottom: 24px;
+}
 /* NAVBAR STARTS */
 
 nav {
@@ -133,7 +157,7 @@ nav {
 
   text-align: center;
   font-family: Mulish;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 48px;
@@ -180,7 +204,82 @@ select {
 }
 
 
+/* BANNER ENDS */
+
+
+/* POPULAR STARTS */
+
+.popular-tour-container{
+  display: flex;
+  justify-content:space-between;
+}
+.popular-tour-content {
+  width: 45%;
+ 
+}
+
+.popular-tour-content li{
+  margin-bottom: 16px;
+  color: rgba(19, 19, 24, 0.70);
+
+font-family: Mulish;
+font-size: 1rem;
+font-weight: 400;
+}
+
+
+.popular-tour-content ul> li{
+  color: rgba(19, 19, 24, 0.70);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 18px;
+ 
+}
+.popular-tour-content {
+  width: 45%;
+ 
+}
+.popular-tour-img img {
+  max-width: 540px;
+  height: 550px;
+}
+
+
+/* POPULAR ENDS */
+
+
+
+/*  DESTINATION STARTS*/
+.destination-content{
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.row{
+  display: grid;
+  border: 2px solid yellow;
+  grid-template-columns: repeat(2, 1fr);
+  /* height: 400px; */
+  gap: 20px;
+  /* display: block; */
+}
+
+.row img{
+  /* /* width: 100%; */
+  object-fit: cover;
+  max-width: 100%;
+  display: block;
+
+}
+
+/* DESTINATION ENDS */
+
 /* ............................................ */
+
+
+
+
 
 /* MEDIA QUERY FOR MOBILE */
 @media screen and (max-width: 600px) {
@@ -215,22 +314,44 @@ select {
     width: 100%;
   } */
 
+  .banner-content{
+    width: 80%;
+  }
+
   .banner-input{
     flex-direction: column;
     width: 90%;
   }
   .bg-img{
     width: 100%;
-    object-fit: cover;
+      /* object-fit: cover; */
     background-size: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
     min-width: auto;
   }
-
 
 
   select, input{
     width: 100%;
     margin-bottom: 16px;
   }
+
+  /* BANNER ENDS */
+
+
+  /* POPULAR */
+
+  .popular-tour-container{
+    flex-direction: column;
+  }
+  .popular-tour-content, .popular-tour-img{
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 14px;
+  }
+  .popular-tour-img img{
+    width: 100%;
+  }
+
+  /* POPULAR ENDS */
 }
