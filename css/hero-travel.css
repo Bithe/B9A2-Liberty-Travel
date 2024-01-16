@@ -13,6 +13,7 @@
   margin: 0 auto;
   border: 2px solid;
   margin-bottom: 100px;
+  min-width: 990
 }
 
 .primary-orange-color {
@@ -120,7 +121,7 @@ nav {
   color: #fff;
 
   font-family: Mulish;
-  font-size: 64px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -143,7 +144,10 @@ nav {
   background: rgba(255, 255, 255, 0.3);
 
   padding: 16px;
-  width: ;
+  display: flex;
+  gap:24px;
+  align-items: center;
+  justify-content: center;
 }
 
 input {
@@ -158,7 +162,7 @@ input {
   font-weight: 400;
   outline: none;
   border: none;
-  margin-right: 24px;
+  /* margin-right: 24px; */
   width: 174px;
 }
 select {
@@ -172,21 +176,23 @@ select {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  margin-right: 24px;
+  /* margin-right: 24px; */
 }
 
-.find-btn
 
 /* ............................................ */
 
 /* MEDIA QUERY FOR MOBILE */
 @media screen and (max-width: 600px) {
+
   .nav-icon {
     width: 50%;
   }
+
   .nav-items {
     display: none;
   }
+  
   #hamburger {
     width: 50%;
     border: 2px solid;
@@ -195,5 +201,36 @@ select {
     padding: 20px;
     float: right;
     font-size: 200%;
+  }
+
+
+  /* BANNER */
+
+  .banner{
+    width: 100%;
+/* margin: 32px 24px; */
+  }
+
+  /* .banner-content{
+    width: 100%;
+  } */
+
+  .banner-input{
+    flex-direction: column;
+    width: 90%;
+  }
+  .bg-img{
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    overflow: hidden;
+    min-width: auto;
+  }
+
+
+
+  select, input{
+    width: 100%;
+    margin-bottom: 16px;
   }
 }
