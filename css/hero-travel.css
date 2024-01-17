@@ -12,7 +12,7 @@
 
 /* COMMON STYLES */
 .container {
-  width: 90%;
+  /* width: 90%; */
   max-width: 1170px;
   margin: 0 auto;
 
@@ -364,7 +364,6 @@ margin: 0 auto; */
   padding: 30px;
 }
 .newsletter-inputs {
-
 }
 
 .newsletter-input {
@@ -406,13 +405,11 @@ margin: 0 auto; */
   font-family: Mulish;
   font-size: 1.5rem;
   font-weight: 800;
- 
-
 }
 
 .newsletter-save {
   text-align: center;
-background-color: #FF5400;
+  background-color: #ff5400;
   width: 324px;
   height: 100px;
   border-radius: 16px;
@@ -420,29 +417,58 @@ background-color: #FF5400;
   bottom: 14%;
   left: 50%;
   transform: rotate(-19.628deg);
-
 }
 
 /* NEWSLETTER ENDS */
 
-
 /* FOOTER STARTS */
-footer{
+.footer {
   text-align: center;
-  background-color: rgba(19, 19, 24, 0.05);;
+  background-color: #f3f3f3;
+  
+  border: 2px solid;
+  padding: 50px;
 }
-
-.footer-logo{
+/* .footer-content {
+  margin: auto ;
+  border: 2px solid;
+  
+} */
+.footer-logo {
   display: flex;
   gap: 16px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 15px;
+  /* margin-top: 50PX; */
 }
-.footer {
-  padding: 120px 0 120px 0px;
+
+
+.footer-logo h3{
+  font-family: Mulish;
+font-size: 2em;
+font-style: normal;
+font-weight: 800;
+
 }
-footer .container {
+
+/* footer .container {
   margin-bottom: 0;
+} */
+
+.social-links{
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+.copyright{
+  margin-top: 30px;
+  color: #131318;
+
+font-family: Inter;
+font-size: 1em;
+font-style: normal;
+font-weight: 300;
 }
 
 /* FOOTER ENDS */
@@ -461,7 +487,7 @@ footer .container {
 
   #hamburger {
     width: 50%;
-  
+
     display: block;
     text-align: right;
     padding: 20px;
@@ -590,14 +616,27 @@ footer .container {
     width: 100%;
   }
 
-  .newsletter-img{
+  .newsletter-img {
     width: 100%;
   }
 
-  
-  .newsletter-save{
+  .newsletter-save {
     width: 20%;
     width: 214.023px;
-height: 79.268px;
+    height: 79.268px;
   }
+
+/* NEWSLETTER ENDS */
+
+/* FOOTER */
+
+/* .footer-content{
+  width: 50%;
+} */
+
+.social-links, .copyright{
+  margin: 0;
+}
+
+
 }
