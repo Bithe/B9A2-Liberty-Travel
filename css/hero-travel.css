@@ -477,8 +477,13 @@ font-weight: 300;
 
 /* MEDIA QUERY FOR MOBILE */
 @media screen and (max-width: 600px) {
+
+.container{
+  width: 100%;
+}
+
   .nav-icon {
-    width: 50%;
+    width: 100%;
   }
 
   .nav-items {
@@ -640,3 +645,6 @@ font-weight: 300;
 
 
 }
+
+
+
